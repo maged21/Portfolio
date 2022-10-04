@@ -34,6 +34,7 @@ header{
   background-image: url(images/background.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .logo {
@@ -43,7 +44,7 @@ header{
   font-weight: bold;
 }
 span {
-  color: #ff3131;
+  color: #b30000;
 }
 .container{
   padding: 10px 10%;
@@ -52,8 +53,18 @@ span {
 nav{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  transition-duration: .5s;
+}
+
+nav.sticky{
+  padding: 2px 4%;
+  background: #101010;
 }
 nav ul li{
   display: inline-block;
@@ -79,7 +90,7 @@ nav ul li a:hover::after{
   width: 100%;
 }
 .header-text{
-  margin-top: 10%;
+  margin-top: 19%;
   margin-left: -1%;
 }
 
@@ -132,6 +143,10 @@ nav ul li a:hover::after{
   font-size: 16px;
   margin-top: 10px;
   text-transform: capitalize;
+}
+.tab-contents h4{
+  font-size: 17px;
+  font-weight: 100;
 }
 .tab-titles{
   display: flex;
@@ -203,6 +218,16 @@ nav ul li a:hover::after{
   border-radius: 5px;
   width: 50%;
   background: #b30000;
+}.progress-5{
+  height: 10px;
+  border-radius: 5px;
+  width: 30%;
+  background: #b30000;
+}.progress-6{
+  height: 10px;
+  border-radius: 5px;
+  width: 20%;
+  background: #b30000;
 }
 
 .tab-contents ul li{
@@ -218,8 +243,8 @@ nav ul li a:hover::after{
 
 /* --------------- services----------------- */
 
-#service{
-  padding: 30px 0;
+#services{
+  padding: 50px 0;
 }
 .services-list{
   display: grid;
@@ -323,11 +348,19 @@ nav ul li a:hover::after{
   padding: 50px 0;
 }
 .course-list{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-  text-align: center;
+  /* margin-top: 22px;
+  max-width: 940px;
+  display: flex;
+  gap:165px;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap; */
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap:130px;
+  justify-content: center;
+  margin-top: 35px;
 }
 
 
@@ -353,7 +386,6 @@ nav ul li a:hover::after{
 .contact-me{
   width: 100%;
   height: 290px;
-  background: var(--bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -375,7 +407,7 @@ nav ul li a:hover::after{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ff3131;
+  background: #b30000;
   border-radius: 50%;
   margin: 22px 10px;
   color: white;
@@ -385,7 +417,7 @@ nav ul li a:hover::after{
 .social a:hover{
   transform: scale(1.4);
   background-color: transparent;
-  border: 2px solid #ff3131;
+  border: 2px solid #b30000;
   transition: .4s;
   cursor: pointer;
 }
@@ -393,8 +425,24 @@ nav ul li a:hover::after{
 nav .fas{
   display: none;
 }
+/* ----------------------footer---------------------------- */
+footer{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+footer p{
+  color: #b30000;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
 /* -----------------------media for small screen---------------- */
 @media only screen and (max-width: 600px) {
+  header{
+    background-size: cover;
+    background-position: center;
+  }
   .header-text{
     margin-top: 100%;
   }
@@ -404,10 +452,20 @@ nav .fas{
   .header-text h3{
     font-size: 28px;
   }
+  nav{
+    position: absolute;
+  }
+  nav.sticky{
+    padding: inherit;
+    background-color: rgba(100, 100, 100, 0);
+  }
+  nav .fa-bars{
+    padding-left: 330px;
+  }
   nav .fas{
     display: block;
     font-size: 25px;
-
+    position: fixed;
   }
   nav ul{
     opacity: 1;
@@ -415,7 +473,7 @@ nav .fas{
     position: fixed;
     top: 0;
     right: -200px;
-    width: 200px;
+    width: 120px;
     height: 100vh;
     padding-top: 50px;
     z-index: 2;
@@ -434,6 +492,7 @@ nav .fas{
   nav .fas{
     cursor: pointer;
   }
+
   .sub-title{
     font-size: 40px;
   }
@@ -449,15 +508,16 @@ nav .fas{
   .about-col-2 p{
     font-size: 12px;
   }
-}
-/* ----------------------footer---------------------------- */
-footer{
-  width: 100%;
-  height: 40px;
-  text-align: center;
-}
-footer p{
-  color: #ff3131;
-  font-size: 20px;
-  text-transform: capitalize;
+  .tab-links{
+    margin-left: -11px;
+  }
+  .tab-contents{
+    margin-left: -11px;
+  }
+  .tab-titles .button{
+    margin-left: -11px
+  }
+  .contact-me p{
+    padding-left: 27px;
+  }
 }
