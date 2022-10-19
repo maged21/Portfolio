@@ -441,7 +441,8 @@ footer p{
 @media only screen and (max-width: 600px) {
   header{
     background-size: cover;
-    background-position: center;
+    background-attachment: inherit;
+
   }
   .header-text{
     margin-top: 100%;
@@ -459,13 +460,13 @@ footer p{
     padding: inherit;
     background-color: rgba(100, 100, 100, 0);
   }
-  nav .fa-bars{
-    padding-left: 330px;
-  }
+
   nav .fas{
     display: block;
     font-size: 25px;
     position: fixed;
+    width: 30px;
+    right: 10px;
   }
   nav ul{
     opacity: 1;
