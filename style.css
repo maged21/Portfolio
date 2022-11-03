@@ -61,7 +61,10 @@ nav{
   right: 0;
   transition-duration: .5s;
 }
-
+/* icons----------------------------- */
+nav .fas{
+  display: none;
+}
 nav.sticky{
   padding: 2px 4%;
   background: #101010;
@@ -370,12 +373,8 @@ nav ul li a:hover::after{
   transition: transform 0.5s;
   margin-bottom: 15px;
 }
-.list p{
-  padding-right: 60px;
-  text-transform: uppercase;
-}
-.list:hover{
-  transform: translateY(-9px);
+.list img:hover{
+  transform: scale(1.3);
   transition: .5s;
 }
 
@@ -421,10 +420,7 @@ nav ul li a:hover::after{
   transition: .4s;
   cursor: pointer;
 }
-/* icons----------------------------- */
-nav .fas{
-  display: none;
-}
+
 /* ----------------------footer---------------------------- */
 footer{
   width: 100%;
