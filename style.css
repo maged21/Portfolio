@@ -26,7 +26,7 @@ html{
 body{
   background:  #101010;
   color: white;
-
+  background-image:url(images/sun-tornado.png) ;
 }
 header{
   width: 100%;
@@ -232,7 +232,7 @@ nav ul li a:hover::after{
 }.progress-6{
   height: 10px;
   border-radius: 5px;
-  width: 20%;
+  width: 80%;
   background: #b30000;
 }
 
@@ -307,6 +307,7 @@ nav ul li a:hover::after{
 }
 .work img{
   width: 100%;
+  max-height: 100%;
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
