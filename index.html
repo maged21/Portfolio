@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Maged Aziz</title>
     <link rel="icon" type="image/png" href="images/favicon.png?v=2">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="aos.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
@@ -26,18 +31,20 @@
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="project.html">Projects</a></li>
             <li><a href="#courses">Courses</a></li>
-            <li><a href="#contact">Contacts</a></li>
+            <li><a href="#contact">Contact</a></li>
             <i class="fas fa-times" onclick="closemenu()"></i>
           </ul>
           <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
-        <div class="header-text" id="home" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1500">
-          <h4>Hello, My <span>Name</span> is</h4>
-          <h1>Maged <span>Aziz</span></h1>
-          <h3>I'm a Frontend <span>Developer</span> and <span>Athlete</span>.</h3>
+        <div class="header-text" id="home" >
+          <h4 data-aos="zoom-in-down"
+          data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1500">Hello, My <span>Name</span> is</h4>
+          <h1 data-aos="zoom-in-up"
+          data-aos-anchor-placement="top-bottom" data-aos-delay="250" data-aos-duration="2600">Maged <span>Aziz</span></h1>
+          <h3 data-aos="zoom-in-down"
+          data-aos-anchor-placement="top-bottom" data-aos-delay="450" data-aos-duration="2900">I'm a Frontend <span>Developer</span> and <span>Athlete</span>.</h3>
       </div>
     </div>
     </header>
@@ -52,40 +59,38 @@
           </div>
           <div class="about-col-2" data-aos="fade-down" data-aos-delay="250" data-aos-duration="1500" data-aos-once="true" data-aos-offset="300"
      data-aos-easing="ease-in-sine">
-            <h1 class="sub-title">about <span>me<span></h1>
-            <p>I am a Front-end web Developer. I can provide clean code and responsive website design.
-            i really like designing things and make the website more attractive. Also I love doing workouts
-            like calisthentics, parkour and gymnastics.</p>
+            <h1 class="sub-title" data-aos="zoom-in" data-aos-delay="280" data-aos-duration="2300" data-aos-once="true">about <span>me<span></h1>
+            <p>I am a skilled front-end developer with one year of experience in creating and managing visually appealing and interactive components for websites and applications. My expertise includes working with technologies such as HTML, CSS, and JavaScript, as well as various front-end frameworks like Bootstrap.I also have experience working with CMS platforms such as WordPress and Shopify Through my experience, I have gained a solid foundation in front-end development and have worked on projects that involve creating user interfaces and implementing design components. With a passion for innovation and a dedication to quality, I strive to create intuitive and responsive user experiences that engage and delight users.</p>
 
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links" onclick="opentab('experience')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-              <a href="MagedCV.pdf" download class="button">Download CV</a>
+            <div class="tab-titles d-flex align-items-center">
+              <p class="tab-links active-link" data-aos="zoom-in-left" data-aos-delay="280" data-aos-duration="2300" data-aos-once="true" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" data-aos="zoom-in-left" data-aos-delay="280" data-aos-duration="2300" data-aos-once="true" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" data-aos="zoom-in-left" data-aos-delay="280" data-aos-duration="2300" data-aos-once="true" onclick="opentab('education')">Education</p>
+              <a href="MagedCV.pdf" download class="button"  data-aos="zoom-in-left" data-aos-delay="280" data-aos-duration="2300" data-aos-once="true">Download CV</a>
             </div>
-            <div class="tab-contents active-tab" id="skills">
+            <div class="tab-contents active-tab" data-aos="fade-down" data-aos-delay="280" data-aos-duration="2300" data-aos-once="true" id="skills">
               <h4>HTML</h4>
-              <div class="progress-bar">
+              <div class="progress-bar mb-2">
                 <div class="progress-1">
                 </div>
               </div>
               <h4>CSS</h4>
-              <div class="progress-bar">
+              <div class="progress-bar mb-2">
                 <div class="progress-2">
                 </div>
               </div>
               <h4>JavaScript</h4>
-              <div class="progress-bar">
+              <div class="progress-bar mb-2">
                 <div class="progress-3">
                 </div>
               </div>
               <h4>PHP</h4>
-              <div class="progress-bar">
+              <div class="progress-bar mb-2">
                 <div class="progress-4">
                 </div>
               </div>
               <h4>Github</h4>
-              <div class="progress-bar">
+              <div class="progress-bar mb-2">
                 <div class="progress-5">
                 </div>
               </div>
@@ -96,15 +101,16 @@
               </div>
             </div>
             <div class="tab-contents" id="experience">
-              <ul>
-                <li><span>2019-2020</span><br>Trampoline Coach at Gravity Code </li>
-                <li><span>2020-2022</span><br>Trampoline Coach at FLY Walk Of Cairo </li>
-                <li><span>2022-current</span><br>Paradise Solutions</li>
+              <ul class="ps-0">
+                <li><span class="contents-years">2019-2020</span><br>Trampoline Coach at Gravity Code </li>
+                <li><span class="contents-years">2020-2022</span><br>Trampoline Coach at FLY Walk Of Cairo </li>
+                <li><span class="contents-years">2022-current</span><br>Aziz Co Agency</li>
+                <li><span class="contents-years">2022-current</span><br>Paradise Solutions</li>
               </ul>
             </div>
             <div class="tab-contents" id="education">
-              <ul>
-                <li><span>2021</span><br>Bachelor Degree In Computer Science At Culture And Science City</li>
+              <ul class="ps-0">
+                <li><span class="contents-years">2021</span><br>Bachelor Degree In Computer Science At Culture And Science City</li>
               </ul>
             </div>
 
@@ -117,14 +123,14 @@
     <!---services ----------------------------->
     <div id="services">
       <div class="container">
-        <h1 class="sub-title">my <span>services</span></h1>
+        <h1 class="sub-title"  data-aos="zoom-in-down" data-aos-delay="280" data-aos-duration="2300" data-aos-once="true">my <span>services</span></h1>
         <div class="services-list">
           <div data-aos="zoom-out-down" data-aos-delay="250" data-aos-duration="1900" data-aos-once="true">
             <i class="bx bx-code"></i>
             <h2>Web Design</h2>
             <p>Every website should have Three primary goals: First one to be responsive, Second one to have a good design and third one to be fast. I can provide that</p>
           </div>
-          <div data-aos="zoom-out-down" data-aos-delay="250" data-aos-duration="1900">
+          <div data-aos="zoom-out-down" data-aos-delay="250" data-aos-duration="1900" data-aos-once="true">
             <i class="bx bx-dumbbell"></i>
             <h2>Athlete</h2>
             <p>Every person should workout at least 3 days per week, to be active and stress free, also it helps in coding because you will have a clear mind. I can help you achieve the perfect body</p>
@@ -133,47 +139,57 @@
       </div>
     </div>
 
-    <!-- portfolio  -------------------->
-    <div id="projects">
-      <div class="container">
-        <h1 class="sub-title">my <span>projects</span></h1>
-        <div class="work-list">
-          <div class="work" data-aos="flip-down" data-aos-delay="250" data-aos-duration="2300" data-aos-once="true">
-            <img src="images/projects/fitness.png">
-            <div class="layer">
-              <h3>Fitness</h3>
-              <a href="https://maged21.github.io/Fitness-Website/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+    <!-- projects  -------------------->
+      <div id="projects" class="py-5">
+        <div class="container">
+          <h1 class="sub-title mb-5"  data-aos="zoom-in-down" data-aos-delay="280" data-aos-duration="2300" data-aos-once="true">my <span>projects</span> </h1>
+          <div class="row mt-5 ms-5 g-3">
+
+            <div class="col-lg-4 mb-5">
+              <div class="card overflow-hidden" style="width: 21rem; height: 20rem;"  data-aos="fade-right" data-aos-delay="280" data-aos-duration="2300" data-aos-once="true">
+                <img src="images/projects/paradise.png" class="card-img-top image-fluid" alt="fitness">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-4 text-capitalize">paradise solutions</h5>
+                  <a href="#" class="button-porject text-capitalize">visit the website</a>
+                </div>
+              </div>
             </div>
+
+
+            <div class="col-lg-4 mb-5">
+              <div class="card overflow-hidden" style="width: 21rem; height: 20rem;"  data-aos="flip-down" data-aos-delay="350" data-aos-duration="2300" data-aos-once="true">
+                <img src="images/projects/wanderlustinn.png" class="card-img-top image-fluid" alt="fitness">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-4">Wanderlust Inn</h5>
+                  <a href="https://maged21.github.io/Wanderlust-Inn/" target="_blank" class="button-porject  text-capitalize">visit the website</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4">
+              <div class="card overflow-hidden" style="width: 21rem; height: 20rem;"  data-aos="fade-left" data-aos-delay="280" data-aos-duration="2300" data-aos-once="true">
+                <img src="images/projects/agency.png" class="image-fluid" alt="fitness">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-4 text-capitalize">digital agency</h5>
+                  <a href="#" class="button-porject  text-capitalize">visit the website</a>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class="work" data-aos="flip-down" data-aos-delay="250" data-aos-duration="2300" data-aos-once="true">
-            <img src="images/projects/paradise.png">
-            <div class="layer">
-              <h3>Paradise Solutions</h3>
-              <a href="https://www.paradise-solutions.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <div class="work" data-aos="flip-down" data-aos-delay="250" data-aos-duration="2300" data-aos-once="true">
-            <img src="images/projects/web-ui.png">
-            <div class="layer">
-              <h3>Web Ui</h3>
-              <a href="https://maged21.github.io/web-ui/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <div class="work" data-aos="flip-down" data-aos-delay="250" data-aos-duration="2300" data-aos-once="true">
-            <img src="images/projects/voorent.png">
-            <div class="layer">
-              <h3>Voorent</h3>
-              <a href="https://maged21.github.io/voorent/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-            </div>
+
+          <div class="text-center mt-5">
+            <a href="project.html" class="button-all text-capitalize" data-aos="zoom-in" data-aos-delay="880" data-aos-duration="2300">view all</a>
           </div>
         </div>
       </div>
 
-    </div>
+
     <!-- courses  ---------------------------------------->
     <div id="courses">
       <div class="container">
-        <h1 class="sub-title">courses <span> & certificate</span></h1>
+        <h1 class="sub-title" data-aos="zoom-in-down"
+        data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1500">courses <span> & certificate</span></h1>
         <div class="course-list">
           <div class="list" data-aos="zoom-out" data-aos-delay="250" data-aos-duration="1500" data-aos-once="true">
             <a href="https://www.credly.com/badges/7d90c7e9-a49c-4e34-bbbb-4ad33c2ed17b?source=linked_in_profile" target="_blank">
@@ -206,7 +222,8 @@
   <!-- contact ---------------------->
   <div id="contact">
     <div class="container">
-      <div class="contact-me">
+      <div class="contact-me" data-aos="zoom-in-up"
+      data-aos-anchor-placement="top-bottom" data-aos-delay="150" data-aos-duration="1500">
         <p>Let me get you a beautiful website.</p>
         <div class="social" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="2300" data-aos-once="true">
           <a href="https://www.facebook.com/maged.abdulaziz.54/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -219,13 +236,14 @@
   </div>
 
 <!-- footer -------------------------------->
-
+<hr>
   <footer>
   <p> Coded and Edited by Maged Abdulaziz</p>
 
   </footer>
 
 <script type="text/javascript" src="js/script.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/aos.js"></script>
 <script>
    AOS.init();
